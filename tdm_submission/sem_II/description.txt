@@ -1,0 +1,3 @@
+cele jmeno
+nazev projektu
+kategorie - napr. model pro hru

@@ -1,0 +1,78 @@
+#https://medium.com/@hfally/a-gitlab-ci-config-to-deploy-to-your-server-via-ssh-43bf3cf93775
+#https://docs.gitlab.com/ee/ci/examples/deployment/composer-npm-deploy.html
+
+#image: gitlab/gitlab-runner:latest
+#image: busybox:latest
+
+before_script:
+  - apk update
+  #- apt-get update
+  - 'which ssh-agent || ( apk update && apk add openssh-client )'
+  #- 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - mkdir -p ~/.ssh
+  - eval $(ssh-agent -s)
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  #- ssh-add < (echo "$STAGING_PRIVATE_KEY")
+  #- printenv STAGING_PRIVATE_KEY | ssh-add -
+  #- sh -c "ssh-add <(echo '$STAGING_PRIVATE_KEY')"
+  #- apk add --no-cache bash
+  #- /bin/bash -c "ssh-add <(echo '$STAGING_PRIVATE_KEY')"
+  #- echo "$STAGING_PRIVATE_KEY" | ssh-add -
+  - echo "$STAGING_PRIVATE_KEY" > id_rsa
+  #- cat id_rsa
+  - chmod 600 id_rsa
+  - ssh-add ./id_rsa
+  - rm ./id_rsa
+
+stages:          # List of stages for jobs, and their order of execution
+  - build
+#  - test
+  - deploy
+
+build-job:       # This job runs in the build stage, which runs first.
+  stage: build
+  artifacts:
+    untracked: true
+    expire_in: 1 hour
+  script:
+    - echo "Preparing directory structure..."
+    - mkdir -p 2022/sem_1/"$STAGING_USER"
+    - cp -r tdm_submission/sem_I/. 2022/sem_1/"$STAGING_USER"
+    - mkdir -p 2022/sem_2/"$STAGING_USER"
+    - cp -r tdm_submission/sem_II/. 2022/sem_2/"$STAGING_USER"
+    - echo "Structure prepared."
+  only:
+    - tags
+
+#unit-test-job:   # This job runs in the test stage.
+#  stage: test    # It only starts when the job in the build stage completes successfully.
+#  script:
+#    - echo "Running unit tests... This will take about 60 seconds."
+#    - sleep 60
+#    - echo "Code coverage is 90%"
+
+#lint-test-job:   # This job also runs in the test stage.
+#  stage: test    # It can run at the same time as unit-test-job (in parallel).
+#  script:
+#    - echo "Linting code... This will take about 10 seconds."
+#    - sleep 10
+#    - echo "No lint issues found."
+
+deploy-job:      # This job runs in the deploy stage.
+  stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
+  dependencies: 
+    - build-job
+  script:
+    - ls
+    - echo "Deploying application..."
+    #kdybych .gitkeep vymazal v prepare fazi, tak se mi prazdne adresare nepresunou do teto faze
+    - find -type f -name .gitkeep -delete
+    #exit code ulozim do exCodeRM_ protoze pri prvni inicialiazaci adresare to spadlo
+    - ssh -p22 tdm-student@leyfi-int.felk.cvut.cz "rm -r works/2022/sem_1/'$STAGING_USER'" || exCodeRM1=$?
+    - echo $exCodeRM1
+    - ssh -p22 tdm-student@leyfi-int.felk.cvut.cz "rm -r works/2022/sem_2/'$STAGING_USER'" || exCodeRM2=$?
+    - echo $exCodeRM2
+    - scp -P22 -r 2022/* tdm-student@leyfi-int.felk.cvut.cz:works/2022
+    - echo "Application successfully deployed."
+  only:
+    - tags
