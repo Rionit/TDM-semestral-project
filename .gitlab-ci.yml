@@ -36,10 +36,10 @@ build-job:       # This job runs in the build stage, which runs first.
     expire_in: 1 hour
   script:
     - echo "Preparing directory structure..."
-    - mkdir -p 2022/sem_1/"$STAGING_USER"
-    - cp -r tdm_submission/sem_I/. 2022/sem_1/"$STAGING_USER"
-    - mkdir -p 2022/sem_2/"$STAGING_USER"
-    - cp -r tdm_submission/sem_II/. 2022/sem_2/"$STAGING_USER"
+    - mkdir -p 2023/sem_1/"$STAGING_USER"
+    - cp -r tdm_submission/sem_I/. 2023/sem_1/"$STAGING_USER"
+    - mkdir -p 2023/sem_2/"$STAGING_USER"
+    - cp -r tdm_submission/sem_II/. 2023/sem_2/"$STAGING_USER"
     - echo "Structure prepared."
   only:
     - tags
@@ -68,11 +68,11 @@ deploy-job:      # This job runs in the deploy stage.
     #kdybych .gitkeep vymazal v prepare fazi, tak se mi prazdne adresare nepresunou do teto faze
     - find -type f -name .gitkeep -delete
     #exit code ulozim do exCodeRM_ protoze pri prvni inicialiazaci adresare to spadlo
-    - ssh -p22 tdm-student@leyfi-int.felk.cvut.cz "rm -r works/2022/sem_1/'$STAGING_USER'" || exCodeRM1=$?
+    - ssh -p22 tdm-student@leyfi-int.felk.cvut.cz "rm -r works/2023/sem_1/'$STAGING_USER'" || exCodeRM1=$?
     - echo $exCodeRM1
-    - ssh -p22 tdm-student@leyfi-int.felk.cvut.cz "rm -r works/2022/sem_2/'$STAGING_USER'" || exCodeRM2=$?
+    - ssh -p22 tdm-student@leyfi-int.felk.cvut.cz "rm -r works/2023/sem_2/'$STAGING_USER'" || exCodeRM2=$?
     - echo $exCodeRM2
-    - scp -P22 -r 2022/* tdm-student@leyfi-int.felk.cvut.cz:works/2022
+    - scp -P22 -r 2023/* tdm-student@leyfi-int.felk.cvut.cz:works/2023
     - echo "Application successfully deployed."
   only:
     - tags
