@@ -1,3 +1,4 @@
+textures
 https://www.textures4photoshop.com/tex/grunge-and-rust/red-painted-rusty-metal-texture-free.aspx
 https://www.freepik.com/free-photo/abstract-metallic-surface-close-up_12336131.htm#query=rusty%20metal%20texture&position=16&from_view=keyword&track=ais
 https://polyhaven.com/a/empty_workshop
@@ -10,7 +11,10 @@ https://www.freepik.com/free-photo/rough-timber-textured-background-design_19134
 https://www.freepik.com/free-photo/wood-material-background-wallpaper-texture-concept_3224634.htm#query=wood&position=5&from_view=search&track=sph
 https://hdrmaps.com/slot-canyon/
 
+for upscaling main texture
 https://create.pixelcut.ai/upscaler
+
+tutorials
 https://www.youtube.com/watch?v=Vu1HBOtAXb4
 https://www.youtube.com/watch?v=PMXbje4Dg1Y&list=PLEaWFIsGP2K5HIJfuJIGqivkNwzBFNg2c&index=7&t=923s&pp=gAQBiAQB
 https://www.youtube.com/watch?v=UQQtvrj92B4&list=PLEaWFIsGP2K5HIJfuJIGqivkNwzBFNg2c&index=8&t=722s
