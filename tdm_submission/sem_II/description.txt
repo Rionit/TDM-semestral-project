@@ -1,3 +1,3 @@
-cele jmeno
-nazev projektu
-kategorie - napr. model pro hru
+Filip Doležal
+South Park animace
+Animace krátké části ze seriálu South Park - S8E1 s využitím vlastního rigu postav
