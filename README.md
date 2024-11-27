@@ -10,7 +10,10 @@ Key features of this project:
 - **Software Used:** Autodesk Maya  
 - Modeled mainly by revolving curves
 - Swinging animation was done by hand
-- Experimented with **realistic materials** and **procedural edge wear** techniques  
+- Experimented with **realistic materials** and **procedural edge wear** techniques
+
+![image of lantern](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_I/renders/lamp_front.png?raw=true)
+
 
 ---
 
@@ -31,6 +34,9 @@ Key features of this project:
 - Rigging and character setup
 - Frame-by-frame animation
 
+![image of South Park 1](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_2.png)
+![image of South Park 2](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_3.png)
+![image of South Park 3](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_1.png)
 ---
 
 Feel free to explore the files. Thank you for visiting!
