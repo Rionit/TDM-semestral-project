@@ -8,9 +8,9 @@ Welcome to my repository showcasing two semestral projects created during my 3D 
 For my first semestral project, I created a realistic 3D model of an **old oil lantern**. The goal of this project was to practice modeling, animation and texturing.  
 Key features of this project:
 - **Software Used:** Autodesk Maya  
-- Modeled mainly by revolving curves.  
+- Modeled mainly by revolving curves
+- Swinging animation was done by hand
 - Experimented with **realistic materials** and **procedural edge wear** techniques  
-- Swinging animation was done by hand.
 
 ---
 
