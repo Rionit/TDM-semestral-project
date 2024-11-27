@@ -13,7 +13,7 @@ Key features of this project:
 - Experimented with **realistic materials** and **procedural edge wear** techniques
 
 ![image of lantern](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_I/renders/lamp_front.png?raw=true)
-![swinging lantern gif](https://github.com/Rionit/TDM-semestral-project/blob/master/gifs/lamp_animation_final.gif)
+<img src="gifs/lamp_animation_final.gif" width="100%"/>
 
 ---
 
