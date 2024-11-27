@@ -1,36 +1,42 @@
-Popis odevzdávání semestrálních projektů z předmětu **TDM**.
-=
-Struktura
--
+# Maya Projects - Semestral Work
 
-1. semestrální práce se odevzdává do adresáře `tdm_submission/sem_I` - do odpovídajících adresářů.
-2. semestrální práce se odevzdává do adresáře `tdm_submission/sem_II` - do odpovídajících adresářů.
+Welcome to my repository showcasing two semestral projects created during my 3D modelling class. Both projects were made in **Autodesk Maya**, using 3D modeling, rigging, and animation.
 
-struktura adresářů jednotlivých studentů je následující a obsah bude odpovídat požadavkům:
+---
 
-`description.txt` - sem vyplňte vaše jméno a popis vašeho projektu - přepište to, co tam je. Je potřeba dodržet řádkování!
+## **Semestral Project 1: 3D Model of an Old Oil Lantern with a simple swinging animation**
+For my first semestral project, I created a realistic 3D model of an **old oil lantern**. The goal of this project was to practice modeling, animation and texturing.  
+Key features of this project:
+- **Software Used:** Autodesk Maya  
+- Modeled mainly by revolving curves
+- Swinging animation was done by hand
+- Experimented with **realistic materials** and **procedural edge wear** techniques
 
-`project`: do tohoto adresáře nahrajte kompletní !ZAKOMPRIMOVANÝ! projektový adresář, včetně rozumného množství záloh. Nezapomeňte jednoznačně pojmenovat poslední verzi a tu uložit jak v MayaBinary (.mb) tak v MayaAscii (.ma). Nezapomeňte vymazat všechny temporary data (renders, obrázky videosekvence, atd...). Velikost by měla být do cca 100MB.
+![image of lantern](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_I/renders/lamp_front.png?raw=true)
 
-`renders`: sem nahrajte pouze rendery ve vysokém rozlišení - doporučený formát je PNG, případně JPG (s TIFFem neumí pracovat server).
 
-`resources`: tady bude seznam všech zdrojů, referencí, podkladů, tutoriálů, které jste použili (fotografie, textury, zvuky, knihy...) s odkazem odkud jste je pořídili. Případně zde budou i jejich kopie. Nezapomeňte dodržovat autorská práva! 
+---
 
-`video`: finální vyrenderovaná videosekvence komprimovaná vhodným kodekem (Xvid, DivX, MPEG-4, H.264, H.265 ...) - nenahrávejte nekomprimované videosekvence - není na to místo.
+## **Semestral Project 2: Recreation of South Park’s "Good Times with Weapons" Scene**
+My second project involved recreating a segment from my favorite South Park episode, **"Good Times with Weapons"**. This project required to create custom rigs for each character and model simple 2D parts of the body such as a set of eyes, mouths, hands etc. I also used Inverse kinematics to control the hands and legs. There are sliders which can choose what type of (eyes, mouth, etc.) the character has for the current frame. It is not perfect, but for this simple scene it worked nicely. Also I believe that South Park animators have even more sophisticated rigs with much bigger set of sprites to choose from and more profiles than just 4 (This can be seen later in the episode for the anime characters being in 8-point turnaround)  
+Key features of this project:
+- **Software Used:** Autodesk Maya  
+- Created custom **rigs for the characters**  
+- Recreated the animation **frame by frame**  
+- Successfully emulated the unique style of South Park
+- Procedural materials with paper like look 
 
-podívejte se na ukázkový projekt https://gitlab.fel.cvut.cz/b221_b6b39tdm/sample_project
+---
 
-Odevzdání
--
-Projekty v adresáři `tdm_submission` se automaticky nahrají na webové stránky (gelerie), pokud se k aktuálnímu commitu ve větvi `master` přidá `tag` - na jménu nezáleží, ale doporučená syntaxe je např. `rel_sem1_v1` (release sem1 v1). Doporučuji vyzkoušet někdy předem se správně upraveným description.
+## Skills Demonstrated
+- 3D modeling
+- Procedural and realistic materials
+- Rigging and character setup
+- Frame-by-frame animation
 
-* webové stránky galerie pro rok 2022
-    * sem1 - https://leyfi.felk.cvut.cz/courses/tdm/?year=2022&presenter=Project
-    * sem2 - https://leyfi.felk.cvut.cz/courses/tdm/?year=2022&projID=sem_2&presenter=Project
-* příklad vytvoření tagu (git bash)
-    * vytvoření tagu: `git tag -a rel_sem1_v1.3 -m "release sem1 v1.3 - better render"`
-    * push (upload) tagu na gitlab: `git push --tags`
+![image of South Park 1](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_2.png)
+![image of South Park 2](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_3.png)
+![image of South Park 3](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_1.png)
+---
 
-*******************************
- david sedláček - 11.10.2022
-*******************************
+Feel free to explore the files. Thank you for visiting!
