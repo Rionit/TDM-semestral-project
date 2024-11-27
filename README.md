@@ -26,6 +26,11 @@ Key features of this project:
 - Successfully emulated the unique style of South Park
 - Procedural materials with paper like look 
 
+<img src="gifs/comparison_side_by_side.gif" width="100%"/>
+![image of South Park 1](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_2.png)
+![image of South Park 2](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_3.png)
+![image of South Park 3](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_1.png)
+
 ---
 
 ## Skills Demonstrated
@@ -33,12 +38,7 @@ Key features of this project:
 - Procedural and realistic materials
 - Rigging and character setup
 - Frame-by-frame animation
-
-<img src="gifs/comparison_side_by_side.gif" width="100%"/>
-
-![image of South Park 1](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_2.png)
-![image of South Park 2](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_3.png)
-![image of South Park 3](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_1.png)
+  
 ---
 
 Feel free to explore the files. Thank you for visiting!
