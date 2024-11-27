@@ -13,7 +13,7 @@ Key features of this project:
 - Experimented with **realistic materials** and **procedural edge wear** techniques
 
 ![image of lantern](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_I/renders/lamp_front.png?raw=true)
-
+![swinging lantern gif](https://github.com/Rionit/TDM-semestral-project/blob/master/gifs/lamp_animation_final.gif)
 
 ---
 
@@ -34,6 +34,7 @@ Key features of this project:
 - Rigging and character setup
 - Frame-by-frame animation
 
+![side by side gif](https://github.com/Rionit/TDM-semestral-project/blob/master/gifs/comparison_side_by_side.gif)
 ![image of South Park 1](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_2.png)
 ![image of South Park 2](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_3.png)
 ![image of South Park 3](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_1.png)
