@@ -35,6 +35,7 @@ Key features of this project:
 - Frame-by-frame animation
 
 <img src="gifs/comparison_side_by_side.gif" width="100%"/>
+
 ![image of South Park 1](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_2.png)
 ![image of South Park 2](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_3.png)
 ![image of South Park 3](https://github.com/Rionit/TDM-semestral-project/blob/master/tdm_submission/sem_II/renders/render_close_up_1.png)
